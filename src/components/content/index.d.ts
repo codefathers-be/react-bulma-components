@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Size } from '..';
 
-interface ContentProps {
+export interface ContentProps {
   size?: Size;
 }
 

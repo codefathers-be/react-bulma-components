@@ -1,15 +1,15 @@
 import { BulmaComponent } from '..';
 import { Color } from '..';
 
-interface PanelProps {
+export interface PanelProps {
   color?: Color;
 }
 
-interface PanelTabProps {
+export interface PanelTabProps {
   active?: boolean;
 }
 
-interface PanelBlockProps {
+export interface PanelBlockProps {
   active?: boolean;
 }
 

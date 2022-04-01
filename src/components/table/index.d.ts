@@ -1,6 +1,6 @@
 import { BulmaComponent, BulmaComponentWithoutRenderAs } from '..';
 
-interface TableProps {
+export interface TableProps {
   size?: 'fullwidth' | 'narrow';
   striped?: boolean;
   bordered?: boolean;

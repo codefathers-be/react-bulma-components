@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Color, Size } from '..';
 
-interface HeroProps {
+export interface HeroProps {
   color?: Color;
   gradient?: boolean;
   size?: Size | 'halfheight'| 'fullheight';

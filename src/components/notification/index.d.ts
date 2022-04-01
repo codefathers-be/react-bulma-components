@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Color } from '..';
 
-interface NotificationProps {
+export interface NotificationProps {
   color?: Color;
   light?: Boolean;
 }

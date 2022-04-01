@@ -1,14 +1,14 @@
 import { BulmaComponent } from '..';
 import { Size } from '..';
 
-interface TabsProps {
+export interface TabsProps {
   align?: 'center' | 'right';
   size?: Size;
   type?: 'toggle' | 'boxed' | 'toggle-rounded';
   fullwidth?: boolean;
 }
 
-interface TabProps {
+export interface TabProps {
   active?: boolean;
 }
 

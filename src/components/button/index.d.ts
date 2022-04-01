@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Color, Size } from '..';
 
-interface ButtonProps {
+export interface ButtonProps {
   color?: Color
   | 'ghost'
   | 'black-bis'
@@ -28,7 +28,7 @@ interface ButtonProps {
   text?: boolean;
 }
 
-interface ButtonGroupProps {
+export interface ButtonGroupProps {
   size?: Size;
   hasAddons?: boolean;
   align?: 'center' | 'right';

@@ -1,6 +1,6 @@
 import { BulmaComponent } from '..';
 
-interface MediaItemProps {
+export interface MediaItemProps {
   align?: 'center' | 'right' | 'left';
 }
 

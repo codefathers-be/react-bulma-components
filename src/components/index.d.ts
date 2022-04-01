@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface HelperProps {
+export interface HelperProps {
   clearfix?: boolean;
   pull?: 'left' | 'right';
   marginless?: boolean;
@@ -17,7 +17,7 @@ interface HelperProps {
 
 type SpacingSize = 0 | 1 | 2 | 3 | 4 | 5 | 6 | Number | String;
 
-interface SpacingProps {
+export interface SpacingProps {
   m?: SpacingSize;
   mt?: SpacingSize;
   mr?: SpacingSize;
@@ -34,7 +34,7 @@ interface SpacingProps {
   py?: SpacingSize;
 }
 
-interface FlexboxProps {
+export interface FlexboxProps {
   flexDirection?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   flexWrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
   justifyContent?:
@@ -84,7 +84,7 @@ export interface ResponsiveModifiers {
   textAlign?: 'center' | 'justify' | 'left' | 'right';
 }
 
-interface ResponsiveProps {
+export interface ResponsiveProps {
   display?: DisplayModifier;
   mobile?: ResponsiveModifiers;
   tablet?: ResponsiveModifiers & { only?: Boolean; };
@@ -96,13 +96,13 @@ interface ResponsiveProps {
   untilFullhd?: ResponsiveModifiers;
 }
 
-interface ColorProps {
+export interface ColorProps {
   textColor?: string;
   backgroundColor?: string;
   colorVariant?: 'light' | 'dark' | String;
 }
 
-interface TypographyProps {
+export interface TypographyProps {
   textSize?: 1 | 2 | 3 | 4 | 5 | 6 | Number | String;
   textAlign?: 'center' | 'justify' | 'left' | 'right' | String;
   textTransform?: 'capitalized' | 'lowercase' | 'uppercase';
@@ -111,12 +111,12 @@ interface TypographyProps {
   italic?: boolean;
 }
 
-type HTMLAttributes<K extends keyof JSX.IntrinsicElements> = OmitKeys<
+export type HTMLAttributes<K extends keyof JSX.IntrinsicElements> = OmitKeys<
   JSX.IntrinsicElements[K],
   keyof ModifierProps | 'ref'
 >;
 
-type ModifierProps = SpacingProps &
+export type ModifierProps = SpacingProps &
   FlexboxProps &
   HelperProps &
   ColorProps &
@@ -156,7 +156,7 @@ export type Breakpoint =
   | 'touch'
   | String;
 
-type RenderAsComponentProps<
+export type RenderAsComponentProps<
   TComponent
 > = TComponent extends keyof JSX.IntrinsicElements
   ? HTMLAttributes<TComponent>

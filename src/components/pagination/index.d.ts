@@ -2,7 +2,7 @@ import * as React from 'react';
 import { BulmaComponent } from '..';
 import { Size } from '..';
 
-interface PaginationProps {
+export interface PaginationProps {
   current?: number;
   disabled?: boolean;
   total?: number;

@@ -1,10 +1,10 @@
 import { BulmaComponent } from '..';
 
-interface LevelProps {
+export interface LevelProps {
   breakpoint?: | 'mobile';
 }
 
-interface LevelSideProps {
+export interface LevelSideProps {
   align?: 'left' | 'right';
 }
 

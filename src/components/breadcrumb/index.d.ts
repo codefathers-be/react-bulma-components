@@ -1,13 +1,13 @@
 import { BulmaComponent } from '..';
 import { Size } from '..';
 
-interface BreadcrumbProps {
+export interface BreadcrumbProps {
   separator?: 'arrow' | 'bullet' | 'dot' | 'succeeds';
   size?: Size;
   align?: 'right' | 'center';
 }
 
-interface BreadcrumbItemProps {
+export interface BreadcrumbItemProps {
   active?: boolean;
 }
 

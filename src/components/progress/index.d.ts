@@ -1,7 +1,7 @@
 import { BulmaComponentWithoutRenderAs } from '..';
 import { Size } from '..'
 
-interface ProgressProps {
+export interface ProgressProps {
   value?: number;
   max?: number;
   size?: Size;

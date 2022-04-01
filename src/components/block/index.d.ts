@@ -1,6 +1,6 @@
 import { BulmaComponent } from '..';
 
-interface ContentProps {
+export interface ContentProps {
 }
 
 declare const Block: BulmaComponent<ContentProps, 'div'>;

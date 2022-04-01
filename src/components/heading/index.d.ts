@@ -1,6 +1,6 @@
 import { BulmaComponent } from '..';
 
-interface HeadingProps {
+export interface HeadingProps {
   size?: 1 | 2 | 3 | 4 | 5 | 6;
   weight?: 'light' | 'normal' | 'semibold' | 'bold';
   subtitle?: boolean;

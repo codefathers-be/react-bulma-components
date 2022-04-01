@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Color, Size } from '..';
 
-interface IconProps {
+export interface IconProps {
   icon?: string;
   size?: Size | 'auto';
   align?: 'left' | 'right';
@@ -9,7 +9,7 @@ interface IconProps {
   text?: Boolean;
 }
 
-declare const Icon: BulmaComponent<IconProps, 'span'> & {
+export declare const Icon: BulmaComponent<IconProps, 'span'> & {
   Text: BulmaComponent<{}, 'span'>;
 };
 

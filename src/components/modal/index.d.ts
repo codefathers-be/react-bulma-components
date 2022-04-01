@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BulmaComponent, BulmaComponentWithoutModifiers } from '..';
 
-interface ModalProps {
+export interface ModalProps {
   show?: boolean;
   onClose?: () => void;
   closeOnEsc?: boolean;
@@ -13,7 +13,7 @@ interface ModalProps {
   className?: string;
 }
 
-interface ModalCardHeaderProps {
+export interface ModalCardHeaderProps {
   showClose?: boolean;
   onClose?: () => void;
 }

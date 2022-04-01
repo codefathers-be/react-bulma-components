@@ -7,24 +7,24 @@ import {
 } from '..';
 import { Color, Size } from '..';
 
-interface FieldProps {
+export interface FieldProps {
   align?: 'center' | 'right';
   kind?: 'addons' | 'group';
   multiline?: boolean;
   horizontal?: boolean;
 }
 
-interface FieldLabelProps {
+export interface FieldLabelProps {
   size?: Size;
 }
 
-interface ControlProps {
+export interface ControlProps {
   fullwidth?: boolean;
   loading?: boolean;
   iconType?: React.ElementType,
 }
 
-interface InputProps<T> {
+export interface InputProps<T> {
   size?: Size;
   color?: Color;
   readOnly?: boolean;
@@ -33,17 +33,17 @@ interface InputProps<T> {
   value?: T;
 }
 
-interface LabelProps {
+export interface LabelProps {
   size?: Size;
 }
 
-interface TextareaProps {
+export interface TextareaProps {
   size?: Size;
   color?: Color;
   fixedSize?: boolean;
 }
 
-interface SelectProps<T> {
+export interface SelectProps<T> {
   size?: Size;
   color?: Color;
   value?: T;
@@ -53,19 +53,19 @@ interface SelectProps<T> {
   fullwidth?: boolean;
 }
 
-interface CheckboxProps {
+export interface CheckboxProps {
   value?: string;
 }
 
-interface RadioProps {
+export interface RadioProps {
   value?: string;
 }
 
-interface HelpProps {
+export interface HelpProps {
   color?: Color;
 }
 
-interface InputFileProps {
+export interface InputFileProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   color?: Color;
   size?: Size;

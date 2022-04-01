@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Size } from '..'
 
-interface SectionProps {
+export interface SectionProps {
   size?: Exclude<Size, 'small'>;
 }
 

@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Breakpoint } from '..';
 
-interface ContainerProps {
+export interface ContainerProps {
   max?: boolean;
   breakpoint?: Breakpoint | 'fluid';
 }

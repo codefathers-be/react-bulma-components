@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Color, Size } from '..';
 
-interface MessageProps {
+export interface MessageProps {
   size?: Size;
   color?: Color;
 }

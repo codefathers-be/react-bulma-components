@@ -1,7 +1,7 @@
 import { BulmaComponent } from '..';
 import { Color } from '..';
 
-interface NavbarProps {
+export interface NavbarProps {
   transparent?: boolean;
   fixed?: 'top' | 'bottom';
   size?: 'large';
@@ -9,26 +9,26 @@ interface NavbarProps {
   active?: boolean;
 }
 
-interface NavbarBurgerProps {
+export interface NavbarBurgerProps {
   onClick?: () => void;
 }
 
-interface NavbarItemProps {
+export interface NavbarItemProps {
   active?: boolean;
   hoverable?: boolean;
 }
 
-interface NavbarDropdownProps {
+export interface NavbarDropdownProps {
   boxed?: boolean;
   right?: boolean;
   up?: boolean;
 }
 
-interface NavbarLinkProps {
+export interface NavbarLinkProps {
   arrowless?: boolean;
 }
 
-interface NavbarContainerProps {
+export interface NavbarContainerProps {
   align?: 'left' | 'right';
 }
 

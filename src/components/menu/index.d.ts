@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { BulmaComponent, BulmaComponentWithoutRenderAs } from '..';
 
-interface MenuListComponentProps {
+export interface MenuListComponentProps {
   title?: React.ReactNode;
 }
 
-interface MenuListItemProps {
+export interface MenuListItemProps {
   active?: boolean;
   children?: React.ReactNode;
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ElementProps, RenderAsComponent } from '..';
 import { Color } from '..';
 
-interface DropdownProps<T> {
+export interface DropdownProps<T> {
   value?: T;
   onChange?: (newValue: T) => void;
   color?: Color;
@@ -17,7 +17,7 @@ interface DropdownProps<T> {
   menuId?: string;
 }
 
-interface DropdownItemProps<T> {
+export interface DropdownItemProps<T> {
   value: T;
 }
 

@@ -30,8 +30,7 @@
     "build-commonjs": "TARGET=commonjs npm run babel -- --out-dir ./cjs ",
     "build-esm": "npm run babel -- --out-dir ./esm",
     "build-all": "npm run build-commonjs && npm run build-esm",
-    "upgrade-dependencies": "npx npm-check --update",
-    "postinstall": "npm run build-all"
+    "upgrade-dependencies": "npx npm-check --update"
   },
   "storybook-deployer": {
     "gitUsername": "Couds",
